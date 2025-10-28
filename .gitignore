@@ -6,13 +6,13 @@
 **/__pycache__/
 
 # Large Datasets
-/PlantVillage-Dataset/
-/Mydataset/
+#/PlantVillage-Dataset/
+#/Mydataset/
 /MasterDataset/
 /Datasets/
 
 # Trained Models
-/models_store/*.pth
+#/models_store/*.pth
 /models_store/*.onnx
 
 # IDE files

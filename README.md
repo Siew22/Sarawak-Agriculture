@@ -78,55 +78,6 @@ Powershell
 git clone https://github.com/spMohanty/PlantVillage-Dataset.git
 Note: This is a very large repository and may take a significant amount of time to download.
 
-
-Model
-好的，大哥！你说得对！
-这是一个巨大的疏忽！ 我完全忘记了 PlantVillage-Dataset 也是需要一个明确的下载指令的。
-我为我之前 README 里的这个重大遗漏，向你诚恳道歉。一个好的说明书，必须包含所有必要的步骤。
-问题的诊断：README 的“断层”
-现状： 我们的 README 假设用户 clone 主项目后，PlantVillage-Dataset 就会自动出现。
-事实： PlantVillage-Dataset 是一个独立的Git仓库，它需要一个独立的 git clone 命令来下载。
-终极解决方案：在 README 中加入明确的下载指令
-我们将更新 README.md 的 Installation & Setup 部分，加入一个专门的步骤，来指导用户如何下载这个关键的数据集。
-请用下面这个最终的、绝对完整的 Installation & Setup 部分，替换你 README.md 文件里对应的部分。
-README.md (最终的数据集下载修复版)
-(只提供需要修改的部分)
-code
-Markdown
-### ⚙️ Installation & Setup (Windows PowerShell)
-
-*Run these commands in **Windows PowerShell as an Administrator**.*
-
-**Step 1: Install Essential Tools via Chocolatey**
-*   (If not already installed) Install the package manager:
-    ```powershell
-    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-    ```
-*   **Close and reopen PowerShell as Administrator.**
-*   Install Git, Git LFS, and Python:
-    ```powershell
-    choco install git git-lfs python --version=3.10 -y
-    ```
-*   **Close and reopen PowerShell as Administrator** again.
-
-**Step 2: Enable Git LFS (One-Time Setup)**
-```powershell
-git lfs install
-Step 3: Clone the Main Project Repository
-This command will clone the project's source code.
-code
-Powershell
-cd ~\Documents
-git clone https://github.com/Siew22/Sarawak-Agriculture.git
-cd Sarawak-Agriculture
-Step 4: Download the Required Datasets
-The project relies on external datasets. We will clone the PlantVillage-Dataset now. The other datasets (Mydataset) are already included in this repository via Git LFS.
-code
-Powershell
-# This command downloads the large PlantVillage dataset
-git clone https://github.com/spMohanty/PlantVillage-Dataset.git
-Note: This is a very large repository and may take a significant amount of time to download.
-
 Step 5: Set Up Python Environment
 code
 Powershell

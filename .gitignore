@@ -1,0 +1,20 @@
+# Environments
+/venv/
+.venv/
+
+# Python Caches
+**/__pycache__/
+
+# Large Datasets
+/PlantVillage-Dataset/
+/Mydataset/
+/MasterDataset/
+/Datasets/
+
+# Trained Models
+/models_store/*.pth
+/models_store/*.onnx
+
+# IDE files
+.idea/
+.vscode/

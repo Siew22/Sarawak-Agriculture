@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarawak Agri-Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 Sarawak Agri-Advisor</h1>
+            <p>您的口袋AI作物医生</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <h2>1. 上传作物照片</h2>
+                <input type="file" id="imageUpload" accept="image/*">
+                <label for="imageUpload" class="upload-label">点击选择照片</label>
+                <div class="image-preview-container">
+                    <img id="imagePreview" src="" alt="Image preview" hidden>
+                </div>
+            </div>
+
+            <div class="language-section">
+                <h2>2. 选择报告语言</h2>
+                <select id="languageSelect">
+                    <option value="zh">简体中文 (Chinese)</option>
+                    <option value="en">English</option>
+                    <option value="ms">Bahasa Malaysia</option>
+                </select>
+            </div>
+
+            <button id="diagnoseBtn" disabled>进行诊断</button>
+
+            <div id="loadingIndicator" class="loading" hidden>
+                <div class="spinner"></div>
+                <p>正在分析，请稍候... (这可能需要10-20秒)</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container" hidden>
+                <h2 id="resultTitle"></h2>
+                
+                <div class="result-section">
+                    <!-- ↓↓↓ 给这个h3加上ID ↓↓↓ -->
+                    <h3 id="summaryTitle">📊 诊断摘要</h3>
+                    <p id="resultSummary"></p>
+                </div>
+                
+                <div class="result-section">
+                    <!-- ↓↓↓ 给这个h3加上ID ↓↓↓ -->
+                    <h3 id="environmentTitle">🌦️ 环境风险分析</h3>
+                    <p id="resultEnvironment"></p>
+                </div>
+            
+                <div class="result-section">
+                    <!-- ↓↓↓ 给这个h3加上ID ↓↓↓ -->
+                    <h3 id="suggestionTitle">📝 管理建议</h3>
+                    <pre id="resultSuggestion"></pre>
+                </div>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

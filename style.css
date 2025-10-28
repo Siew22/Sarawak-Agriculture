@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #2E7D32; /* 深绿色 */
+    --secondary-color: #4CAF50; /* 亮绿色 */
+    --background-color: #F1F8E9; /* 极浅的绿色背景 */
+    --text-color: #333;
+    --border-color: #ddd;
+    --card-bg: #fff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* --- 上传部分 --- */
+#imageUpload {
+    display: none; /* 隐藏原生丑陋的input */
+}
+
+.upload-label {
+    display: block;
+    background-color: #f0f0f0;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.upload-label:hover {
+    background-color: #e9e9e9;
+    border-color: var(--secondary-color);
+}
+
+.image-preview-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 250px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* --- 语言选择 --- */
+#languageSelect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+/* --- 主按钮 --- */
+#diagnoseBtn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#diagnoseBtn:hover:not(:disabled) {
+    background-color: var(--primary-color);
+}
+
+#diagnoseBtn:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+/* --- 加载与结果 --- */
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.results-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9fff9;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+}
+
+.result-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+#resultSuggestion {
+    white-space: pre-wrap; /* 让\n换行符生效 */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+}

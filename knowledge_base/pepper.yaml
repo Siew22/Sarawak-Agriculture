@@ -1,0 +1,213 @@
+# ==========================================================
+# Sarawak Pepper (Lada Sarawak) Knowledge Base
+# Version 1.0
+# ==========================================================
+# This file contains diagnostic and management information
+# for common diseases affecting pepper plants in Sarawak.
+# Supported languages: en (English), ms (Bahasa Malaysia), zh (简体中文)
+# ==========================================================
+
+# --- Disease: Bacterial Spot ---
+Pepper,_bell___Bacterial_spot:
+  name:
+    en: "Bacterial Spot"
+    ms: "Bintik Bakteria"
+    zh: "细菌性斑点病"
+  summary:
+    en: "This is likely Bacterial Spot, a common disease caused by Xanthomonas bacteria. It thrives in warm, wet conditions and can spread rapidly through rain splash or overhead irrigation."
+    ms: "Ini kemungkinan Bintik Bakteria, penyakit biasa yang disebabkan oleh bakteria Xanthomonas. Ia merebak dengan cepat dalam keadaan panas dan basah, terutamanya melalui percikan hujan atau pengairan dari atas."
+    zh: "这很可能是细菌性斑点病，一种由黄单胞菌引起的常见病害。它在温暖潮湿的环境中繁殖迅速，可通过雨水飞溅或顶部灌溉快速传播。"
+  symptoms:
+    - en: "Small, water-soaked, almost greasy spots appear on leaves."
+      ms: "Bintik-bintik kecil berair seperti berminyak muncul pada daun."
+      zh: "叶片上出现小的、水浸状、近乎油腻的斑点。"
+    - en: "These spots enlarge and turn dark brown to black, often with a slightly greasy appearance and sometimes a yellow halo."
+      ms: "Bintik-bintik ini membesar dan bertukar menjadi coklat gelap hingga hitam, selalunya kelihatan sedikit berminyak dan kadang-kadang mempunyai lingkaran kuning."
+      zh: "斑点扩大并转为深褐色至黑色，通常外观略带油腻感，有时伴有黄色晕圈。"
+    - en: "In severe cases, leaves may turn yellow, become ragged, and drop prematurely."
+      ms: "Dalam kes yang teruk, daun mungkin menjadi kuning, compang-camping, dan gugur sebelum waktunya."
+      zh: "在严重的情况下，叶片可能变黄、破烂，并过早脱落。"
+  treatments:
+    - title:
+        en: "Cultural & Physical Control (Immediate Action)"
+        ms: "Kawalan Kultur & Fizikal (Tindakan Segera)"
+        zh: "农业与物理防治 (立即行动)"
+      steps:
+        - en: "Remove and destroy infected leaves and plant debris immediately. Do not compost them."
+          ms: "Buang dan musnahkan daun serta sisa tanaman yang dijangkiti dengan serta-merta. Jangan komposkannya."
+          zh: "立即移除并安全销毁（如深埋或焚烧）已感染的叶片和植物残体，不要将其用作堆肥。"
+        - en: "Switch to drip or furrow irrigation to keep foliage as dry as possible. Water in the morning so leaves can dry quickly."
+          ms: "Gunakan pengairan titis atau alur untuk memastikan dedaun sekering mungkin. Siram pada waktu pagi supaya daun cepat kering."
+          zh: "改用滴灌或沟灌，以保持叶面尽可能干燥。选择在清晨浇水，以便叶片能快速干燥。"
+        - en: "Improve air circulation around plants by pruning and proper spacing."
+          ms: "Tingkatkan peredaran udara di sekeliling tanaman dengan pemangkasan dan jarak tanaman yang betul."
+          zh: "通过修剪和合理的种植间距，改善植株周围的空气流通。"
+    - title:
+        en: "Chemical Control"
+        ms: "Kawalan Kimia"
+        zh: "化学防治"
+      steps:
+        - en: "At the first sign of disease, apply a fixed copper-based bactericide. Repeat applications every 7-10 days during rainy periods."
+          ms: "Pada tanda pertama penyakit, gunakan bakterisid berasaskan kuprum tetap. Ulangi aplikasi setiap 7-10 hari semasa musim hujan."
+          zh: "在发病初期，施用固定的铜基杀菌剂。在多雨时期，每隔7-10天施用一次。"
+        - en: "Alternate with a mancozeb-containing fungicide to manage both bacterial and fungal diseases. Always follow label instructions."
+          ms: "Selang-selikan dengan racun kulat yang mengandungi mancozeb untuk menguruskan penyakit bakteria dan kulat. Sentiasa patuhi arahan pada label."
+          zh: "可与含代森锰锌的杀菌剂交替使用，以同时管理细菌和真菌病害。请务必遵循产品标签上的说明。"
+
+# --- Plant Status: Healthy ---
+Pepper,_bell___healthy:
+  name:
+    en: "Healthy"
+    ms: "Sihat"
+    zh: "健康"
+  summary:
+    en: "Congratulations! Based on the image analysis, your pepper plant appears healthy and vigorous, with no obvious signs of disease."
+    ms: "Tahniah! Berdasarkan analisis imej, tanaman lada anda kelihatan sihat dan subur, tanpa tanda-tanda penyakit yang jelas."
+    zh: "恭喜！根据图像分析，您的胡椒植株生长健康、茁壮，未发现明显的病害症状。"
+  treatments:
+    - title:
+        en: "Preventative Care & Best Practices"
+        ms: "Penjagaan Pencegahan & Amalan Terbaik"
+        zh: "预防性护理与最佳实践"
+      steps:
+        - en: "Continue good field management: ensure proper ventilation, balanced watering and fertilization, and regular inspection for early detection of pests or diseases."
+          ms: "Teruskan pengurusan ladang yang baik: pastikan pengudaraan yang betul, penyiraman dan pembajaan yang seimbang, serta pemeriksaan berkala untuk pengesanan awal perosak atau penyakit."
+          zh: "请继续保持良好的田间管理：确保通风良好，水肥均衡，并定期巡视，以便及早发现任何病虫害的迹象。"
+        - en: "Rotate crops if possible and use certified disease-free seeds or transplants."
+          ms: "Lakukan penggiliran tanaman jika boleh dan gunakan benih atau anak pokok yang disahkan bebas penyakit."
+          zh: "如果条件允许，进行作物轮作，并使用经过认证的无病种子或移栽苗。"
+        - en: "Sanitize tools regularly, especially after working in different areas of the field."
+          ms: "Nyahkuman alatan secara berkala, terutamanya selepas bekerja di kawasan ladang yang berbeza."
+          zh: "定期对农具进行消毒，尤其是在不同田块作业之后。"
+
+# --- Disease: Phytophthora Blight (Foot Rot) - A placeholder for another common disease ---
+# This is a conceptual entry. You would need corresponding images in your dataset to train the model for this.
+Phytophthora_blight:
+  name:
+    en: "Phytophthora Blight (Foot Rot)"
+    ms: "Reput Pangkal (Hawar Phytophthora)"
+    zh: "疫霉病 (根腐病/黑脚病)"
+  summary:
+    en: "This could be Phytophthora Blight, a devastating water mold disease that attacks the roots and stem base, common in poorly drained soils."
+    ms: "Ini mungkin Reput Pangkal, penyakit kulapuk air yang merosakkan akar dan pangkal batang, biasa dijumpai di tanah yang saliran tidak baik."
+    zh: "这可能是疫霉病，一种毁灭性的水霉病害，常在排水不良的土壤中发生，主要攻击根部和茎基部，俗称“黑脚病”。"
+  symptoms:
+    - en: "Dark brown or black lesion at the soil line on the stem (foot rot)."
+      ms: "Lesi coklat gelap atau hitam pada paras tanah di batang (reput pangkal)."
+      zh: "茎基部靠近土壤线处出现深褐色或黑色的病斑。"
+    - en: "Sudden wilting of the entire plant, even with moist soil."
+      ms: "Kelayuan mendadak seluruh tanaman, walaupun tanah masih lembap."
+      zh: "即使土壤湿润，整株植物也会突然萎蔫。"
+    - en: "Leaves turn yellow or light green and drop, and roots may be brown and rotten."
+      ms: "Daun menjadi kuning atau hijau muda dan gugur, dan akar mungkin berwarna coklat dan reput."
+      zh: "叶片变黄或浅绿并脱落，根部可能呈褐色并腐烂。"
+  treatments:
+    - title:
+        en: "Management & Prevention"
+        ms: "Pengurusan & Pencegahan"
+        zh: "管理与预防"
+      steps:
+        - en: "Improve soil drainage immediately. Plant on raised beds to avoid waterlogging."
+          ms: "Perbaiki saliran tanah dengan segera. Tanam di atas batas yang ditinggikan untuk mengelakkan air bertakung."
+          zh: "立即改善土壤排水。在抬高的畦上种植，以避免土壤积水。"
+        - en: "Remove and destroy infected plants and the surrounding soil to prevent spread."
+          ms: "Buang dan musnahkan tanaman yang dijangkiti serta tanah di sekelilingnya untuk mengelakkan penyebaran."
+          zh: "移除并销毁病株及其周边的土壤，以防止病原体扩散。"
+        - en: "Avoid over-watering and use a targeted irrigation system."
+          ms: "Elakkan penyiraman berlebihan dan gunakan sistem pengairan yang disasarkan."
+          zh: "避免过度浇水，并使用有针对性的灌溉系统。"
+    - title:
+        en: "Chemical Control"
+        ms: "Kawalan Kimia"
+        zh: "化学防治"
+      steps:
+        - en: "Apply specific fungicides such as mefenoxam or metalaxyl as a soil drench preventatively in high-risk areas."
+          ms: "Gunakan racun kulat khusus seperti mefenoxam atau metalaxyl sebagai siraman tanah secara pencegahan di kawasan berisiko tinggi."
+          zh: "在疫病高风险区域，预防性地使用甲霜灵或精甲霜灵等特定杀菌剂进行土壤浇灌。"
+
+# --- Disease: Anthracnose ---
+# 炭疽病，非常常见
+Pepper__Anthracnose:
+  name:
+    en: "Anthracnose"
+    ms: "Antraknos"
+    zh: "炭疽病"
+  summary:
+    en: "This appears to be Anthracnose, a fungal disease caused by Colletotrichum species. It primarily affects ripening berries but can also appear on leaves and stems, especially during prolonged wet and humid periods."
+    ms: "Ini kelihatan seperti Antraknos, penyakit kulat yang disebabkan oleh spesis Colletotrichum. Ia terutamanya menyerang buah lada yang sedang masak tetapi juga boleh muncul pada daun dan batang, terutamanya semasa tempoh basah dan lembap yang berpanjangan."
+    zh: "这很可能是炭疽病，一种由炭疽菌属真菌引起的病害。它主要侵害即将成熟的果实，但在持续潮湿的环境下，也会在叶片和茎上出现症状。"
+  symptoms:
+    - en: "On leaves, small, water-soaked, circular spots that enlarge and turn dark with a sunken center."
+      ms: "Pada daun, bintik-bintik kecil berair dan bulat yang membesar dan menjadi gelap dengan bahagian tengah yang lekuk."
+      zh: "在叶片上，出现小的水浸状圆形斑点，后扩大，中心凹陷并变为深色。"
+    - en: "On berries, small, sunken, dark spots that may develop pinkish-orange spore masses in the center during wet weather."
+      ms: "Pada buah, bintik-bintik kecil, lekuk, dan gelap yang mungkin menghasilkan spora berwarna merah jambu-oren di tengah semasa cuaca basah."
+      zh: "在果实上，出现小的凹陷黑斑，潮湿时斑点中心可能产生粉橙色的孢子团。"
+  treatments:
+    - title:
+        en: "Cultural & Sanitation Practices"
+        ms: "Amalan Kultur & Kebersihan"
+        zh: "农业与卫生管理"
+      steps:
+        - en: "Prune out and destroy infected branches and berries. Remove fallen debris from under the plants."
+          ms: "Pangkas dan musnahkan dahan serta buah yang dijangkiti. Buang sisa-sisa yang gugur di bawah tanaman."
+          zh: "修剪并销毁受感染的枝条和果实。清除植株下方的落叶和残骸。"
+        - en: "Promote good air circulation through proper pruning to help foliage dry faster."
+          ms: "Galakkan peredaran udara yang baik melalui pemangkasan yang betul untuk membantu dedaun kering lebih cepat."
+          zh: "通过合理修剪，促进空气流通，帮助叶面快速干燥。"
+    - title:
+        en: "Chemical Control"
+        ms: "Kawalan Kimia"
+        zh: "化学防治"
+      steps:
+        - en: "Apply fungicides containing azoxystrobin, mancozeb, or chlorothalonil. Start applications before the rainy season and continue on a 7-14 day schedule."
+          ms: "Gunakan racun kulat yang mengandungi azoxystrobin, mancozeb, atau chlorothalonil. Mulakan aplikasi sebelum musim hujan dan teruskan mengikut jadual 7-14 hari."
+          zh: "施用含有嘧菌酯、代森锰锌或百菌清的杀菌剂。在雨季来临前开始喷洒，并根据情况每隔7-14天喷洒一次。"
+        - en: "Ensure thorough coverage of the entire plant, including fruits and stems."
+          ms: "Pastikan semburan meliputi keseluruhan tanaman, termasuk buah dan batang."
+          zh: "确保药剂均匀覆盖整个植株，包括果实和茎部。"
+
+# --- Pest: Pepper Weevil or other borers ---
+# 象鼻虫或其他蛀虫，这是虫害，不是病害
+Pepper__Pest_Damage:
+  name:
+    en: "Pest Damage (e.g., Weevil/Borer)"
+    ms: "Kerosakan Perosak (cth, Kumbang Pengerat)"
+    zh: "虫害损伤 (如象鼻虫/蛀虫)"
+  summary:
+    en: "The symptoms (e.g., holes in leaves, wilting stems) suggest damage from a pest, such as the pepper weevil or a stem borer, rather than a disease."
+    ms: "Gejala (cth, lubang pada daun, batang layu) menunjukkan kerosakan daripada perosak, seperti kumbang pengerat lada atau pengorek batang, bukannya penyakit."
+    zh: "这些症状（如叶片上的孔洞、萎蔫的茎）表明这更可能是由害虫造成的损伤，例如胡椒象鼻虫或蛀茎虫，而不是病害。"
+  symptoms:
+    - en: "Small holes chewed in leaves or flower buds."
+      ms: "Lubang-lubang kecil yang digigit pada daun atau putik bunga."
+      zh: "叶片或花蕾上有被啃食的小孔。"
+    - en: "Wilting of individual branches or the entire plant due to larvae tunneling inside the stem."
+      ms: "Kelayuan dahan individu atau seluruh tanaman disebabkan oleh larva yang mengorek di dalam batang."
+      zh: "由于幼虫在茎内蛀食，导致个别枝条或整株植物萎蔫。"
+    - en: "Swelling or cankers may appear on stems."
+      ms: "Bengkak atau kanker mungkin muncul pada batang."
+      zh: "茎上可能出现肿胀或溃疡状的伤口。"
+  treatments:
+    - title:
+        en: "Monitoring & Physical Control"
+        ms: "Pemantauan & Kawalan Fizikal"
+        zh: "监测与物理防治"
+      steps:
+        - en: "Regularly inspect plants for signs of adult insects or larval entry holes."
+          ms: "Periksa tanaman secara berkala untuk tanda-tanda serangga dewasa atau lubang kemasukan larva."
+          zh: "定期检查植株，寻找成虫或幼虫蛀入的孔洞。"
+        - en: "Prune and destroy any wilted or infested branches immediately to kill the larvae inside."
+          ms: "Pangkas dan musnahkan mana-mana dahan yang layu atau diserang dengan segera untuk membunuh larva di dalamnya."
+          zh: "立即修剪并销毁任何萎蔫或受害的枝条，以杀死内部的幼虫。"
+    - title:
+        en: "Chemical Control"
+        ms: "Kawalan Kimia"
+        zh: "化学防治"
+      steps:
+        - en: "Apply insecticides containing active ingredients like cypermethrin or imidacloprid, targeting the adult insects. Timing is critical."
+          ms: "Gunakan racun serangga yang mengandungi bahan aktif seperti cypermethrin atau imidacloprid, sasarkan pada serangga dewasa. Masa penyemburan adalah kritikal."
+          zh: "施用含有氯氰菊酯或吡虫啉等有效成分的杀虫剂，以杀灭成虫。喷洒时机至关重要。"
+        - en: "Consult a local agricultural extension officer for the best insecticide and application timing for your specific region."
+          ms: "Rujuk pegawai pengembangan pertanian tempatan untuk racun serangga dan masa aplikasi terbaik untuk kawasan spesifik anda."
+          zh: "请咨询本地农业推广人员，以确定您所在地区最有效的药剂和最佳施用时间。"

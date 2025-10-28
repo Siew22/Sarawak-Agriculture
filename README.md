@@ -1,2 +1,138 @@
-# sarawak-agri-advisor-backend
-AI-powered plant disease diagnosis system for farmers in Sarawak.
+# 🌿 Sarawak Agri-Advisor
+
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Git LFS](https://img.shields.io/badge/Git%20LFS-1.3GB-blue?style=for-the-badge&logo=git&logoColor=white)
+
+**An AI-powered, 100% self-developed plant disease diagnosis system for farmers in Sarawak, with an initial focus on Black Pepper cultivation.**
+
+This project is a complete end-to-end web application designed to provide instant, AI-driven diagnosis of crop diseases. It leverages a custom deep learning model trained from scratch, soft computing techniques for risk analysis, and a dynamic knowledge base to deliver accurate, localized, and easy-to-understand advice in multiple languages.
+
+---
+
+## ✨ Core Features
+
+-   **📸 AI Disease Diagnosis:** Upload a photo of a plant leaf and get an instant diagnosis. The model is **100% self-developed** using PyTorch and trained from scratch on a curated dataset, with **no pre-trained models** used.
+-   **🌦️ Automated Risk Analysis:** Automatically fetches local weather data (temperature & humidity) via GPS and uses a Fuzzy Inference System to provide a contextual disease risk score.
+-   **📖 Dynamic Knowledge Base:** All diagnostic reports and management suggestions are dynamically generated in real-time from a structured YAML knowledge base, ensuring easy updates and scalability.
+-   **🌐 Multi-language Support:** The user interface and final reports are fully internationalized, supporting **English, Bahasa Malaysia, and Chinese**.
+-   **🚀 Lightweight & Accessible:** A simple web frontend ensures the tool is accessible on any device with a browser, with no installation required for the end-user.
+
+---
+
+## 🛠️ Technology Stack
+
+-   **Backend:** FastAPI, PyTorch, Scikit-fuzzy, Uvicorn
+-   **Frontend:** Vanilla HTML5, CSS3, JavaScript (Fetch API, Geolocation API)
+-   **Data Science:** Pandas, Scikit-learn, Pillow
+-   **Version Control:** Git & **Git LFS** (for handling large dataset files)
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to get the project and its complete dataset running on your local machine.
+
+### 📋 Prerequisites
+
+1.  **Git & Git LFS:** You must have both installed.
+    -   [Download Git](https://git-scm.com/downloads)
+    -   [Download Git LFS](https://git-lfs.github.com/)
+2.  **Python:** Version 3.10 is recommended. [Download Python](https://www.python.org/downloads/)
+3.  **(Optional for Training)** An NVIDIA GPU with updated CUDA drivers.
+
+### ⚙️ Installation & Setup (Windows PowerShell)
+
+*Run these commands in **Windows PowerShell as an Administrator**.*
+
+1.  **Install Essential Tools via Chocolatey:**
+    *   (If you don't have Chocolatey) First, install the package manager:
+        ```powershell
+        Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+        ```
+    *   **Close and reopen PowerShell as Administrator.**
+    *   Now, install Git, Git LFS, and Python:
+        ```powershell
+        choco install git git-lfs python --version=3.10 -y
+        ```
+    *   **Close and reopen PowerShell as Administrator** again.
+
+2.  **Enable Git LFS for your user account (one-time setup):**
+    ```powershell
+    git lfs install
+    ```
+
+3.  **Clone the Repository:**
+    *   The `clone` command will now automatically download both the code and all the large dataset files managed by Git LFS. This may take a while.
+    ```powershell
+    cd ~\Documents
+    git clone https://github.com/Siew22/Sarawak-Agriculture.git
+    cd Sarawak-Agriculture
+    ```
+
+4.  **Set Up Python Environment:**
+    ```powershell
+    # Allow script execution for this session
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+    # Create and activate virtual environment
+    python -m venv venv
+    .\venv\Scripts\Activate.ps1
+    ```
+    *(You should see `(venv)` at the beginning of your prompt.)*
+
+5.  **Install Python Dependencies:**
+    ```powershell
+    pip install -r requirements.txt
+    ```
+
+**✅ Setup Complete!** Your environment, including all code and datasets, is now fully configured.
+
+---
+
+## 🔬 Training the Model
+
+The repository includes all the necessary data to train the model from scratch.
+
+-   Run the appropriate training script from the **project root directory**:
+    ```powershell
+    # For 12GB+ VRAM (Recommended)
+    python train/train_model_2.py
+
+    # For 6GB VRAM
+    python train/train_model.py
+    ```
+-   After training, update the `MODEL_PATH` in `app/models/disease_classifier.py` to point to your new model file.
+
+---
+
+## ▶️ Running the Application
+
+### 1. Run the Backend Server
+
+-   From the **project root directory** with your virtual environment active:
+    ```powershell
+    uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ```
+-   The backend is now live at `http://127.0.0.1:8000`.
+
+### 2. Run the Frontend
+
+-   Navigate to the `frontend/` directory in your file explorer.
+-   **Simply double-click the `index.html`** file to open it in your browser.
+
+---
+
+## 🛠️ Project Structure
+
+-   `app/`: Main backend application source code.
+-   `frontend/`: All frontend files (HTML, CSS, JS).
+-   `knowledge_base/`: YAML files containing the multi-language knowledge.
+-   `models_store/`: Stores the trained model (`.pth`) and label files.
+-   `train/`: Scripts for training the AI model.
+-   `Mydataset/` & `PlantVillage-Dataset/`: Raw and curated datasets, tracked by **Git LFS**.
+-   `.gitattributes`: Configures which files are tracked by Git LFS.
+-   `.gitignore`: Specifies files for Git to ignore (e.g., `venv`).
+-   `README.md`: This file.
+-   `requirements.txt`: Python dependencies.
